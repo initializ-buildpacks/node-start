@@ -4,5 +4,5 @@
   ],
   "node-engine": "github.com/paketo-buildpacks/node-engine",
   "npm-install": "github.com/paketo-buildpacks/npm-install",
-  "watchexec": "index.docker.io/paketobuildpacks/watchexec"
+  "watchexec": "index.docker.io/initializbuildpacks/watchexec"
 }
