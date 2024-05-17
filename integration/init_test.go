@@ -33,9 +33,9 @@ var settings struct {
 	}
 
 	Extensions struct {
-		// UbiNodejsExtension struct {
-		// 	Online string
-		// }
+		UbiNodejsExtension struct {
+			Online string
+		}
 	}
 
 	Buildpack struct {
@@ -47,7 +47,7 @@ var settings struct {
 		NodeEngine         string `json:"node-engine"`
 		NPMInstall         string `json:"npm-install"`
 		Watchexec          string `json:"watchexec"`
-		// UbiNodejsExtension string `json:"ubi-nodejs-extension"`
+		UbiNodejsExtension string `json:"ubi-nodejs-extension"`
 	}
 }
 
@@ -80,11 +80,11 @@ func TestIntegration(t *testing.T) {
 	builder, err := pack.Builder.Inspect.Execute()
 	Expect(err).NotTo(HaveOccurred())
 
-	// if builder.BuilderName == "index.docker.io/paketocommunity/builder-ubi-buildpackless-base:latest" {
-	// 	settings.Extensions.UbiNodejsExtension.Online, err = buildpackStore.Get.
-	// 		Execute(settings.Config.UbiNodejsExtension)
-	// 	Expect(err).ToNot(HaveOccurred())
-	// }
+	if builder.BuilderName == "index.docker.io/paketocommunity/builder-ubi-buildpackless-base:latest" {
+		settings.Extensions.UbiNodejsExtension.Online, err = buildpackStore.Get.
+			Execute(settings.Config.UbiNodejsExtension)
+		Expect(err).ToNot(HaveOccurred())
+	}
 
 	settings.Buildpacks.NodeStart.Online, err = buildpackStore.Get.
 		WithVersion("1.2.3").

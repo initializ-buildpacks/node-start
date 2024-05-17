@@ -30,11 +30,11 @@ func testProjectPath(t *testing.T, context spec.G, it spec.S) {
 		pack = occam.NewPack().WithVerbose().WithNoColor()
 		docker = occam.NewDocker()
 
-		// if settings.Extensions.UbiNodejsExtension.Online != "" {
-		// 	pullPolicy = "always"
-		// 	extenderBuildStr = "[extender (build)] "
-		// 	extenderBuildStrEscaped = `\[extender \(build\)\] `
-		// }
+		if settings.Extensions.UbiNodejsExtension.Online != "" {
+			pullPolicy = "always"
+			extenderBuildStr = "[extender (build)] "
+			extenderBuildStrEscaped = `\[extender \(build\)\] `
+		}
 	})
 
 	context("when building an app with a custom project path", func() {
@@ -68,7 +68,7 @@ func testProjectPath(t *testing.T, context spec.G, it spec.S) {
 			image, logs, err = pack.Build.
 				WithPullPolicy(pullPolicy).
 				WithExtensions(
-					// settings.Extensions.UbiNodejsExtension.Online,
+					settings.Extensions.UbiNodejsExtension.Online,
 				).
 				WithBuildpacks(
 					settings.Buildpacks.NodeEngine.Online,
