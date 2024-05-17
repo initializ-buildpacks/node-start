@@ -1,6 +1,6 @@
 {
   "builders": [
-    "paketobuildpacks/builder-jammy-buildpackless-base",
+    "initializbuildpacks/securepacks-initzbuilder",
     "index.docker.io/paketocommunity/builder-ubi-buildpackless-base:latest"
   ],
   "ubi-nodejs-extension": "github.com/paketo-community/ubi-nodejs-extension",
