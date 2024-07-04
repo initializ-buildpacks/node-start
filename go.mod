@@ -2,6 +2,8 @@ module github.com/paketo-buildpacks/node-start
 
 go 1.22
 
+toolchain go1.22.5
+
 require (
 	github.com/BurntSushi/toml v1.3.2
 	github.com/onsi/gomega v1.31.1
