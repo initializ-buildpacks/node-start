@@ -1,7 +1,7 @@
 # Initializ Buildpack for Node Start
 ## `docker.io/initializ-buildpacks/node-start`
 
-The Initializ Node Start CNB sets the start command for a given node application. The buildpack will detect when a valid JavaScript file is present within the application source code directory (see [Application Detection](#application-detection)).
+The Initializ Node Start CNB sets the start command for a given node application. The buildpack will detect when a valid JavaScript file is present within the application source code directory (see [Application Detection](#application-detection))
 
 ## Integration
 
