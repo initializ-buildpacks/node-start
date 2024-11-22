@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	nodestart "github.com/paketo-buildpacks/node-start"
-	"github.com/paketo-buildpacks/node-start/fakes"
+	nodestart "github.com/initializ-buildpacks/node-start"
+	"github.com/initializ-buildpacks/node-start/fakes"
 	"github.com/paketo-buildpacks/packit/v2"
 	"github.com/sclevine/spec"
 

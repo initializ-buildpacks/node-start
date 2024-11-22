@@ -3,7 +3,7 @@
     "index.docker.io/initializbuildpacks/securepacks-initzbuilder"
   ],
   "ubi-nodejs-extension": "github.com/paketo-community/ubi-nodejs-extension",
-  "node-engine": "github.com/paketo-buildpacks/node-engine",
-  "npm-install": "github.com/paketo-buildpacks/npm-install",
+  "node-engine": "github.com/initializ-buildpacks/node-engine",
+  "npm-install": "github.com/initializ-buildpacks/npm-install",
   "watchexec": "index.docker.io/initializbuildpacks/watchexec"
 }

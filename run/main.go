@@ -4,7 +4,7 @@ import (
 	"os"
 
 	"github.com/paketo-buildpacks/libreload-packit/watchexec"
-	nodestart "github.com/paketo-buildpacks/node-start"
+	nodestart "github.com/initializ-buildpacks/node-start"
 	"github.com/paketo-buildpacks/packit/v2"
 	"github.com/paketo-buildpacks/packit/v2/scribe"
 )

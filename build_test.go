@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/paketo-buildpacks/libreload-packit"
-	nodestart "github.com/paketo-buildpacks/node-start"
-	"github.com/paketo-buildpacks/node-start/fakes"
+	nodestart "github.com/initializ-buildpacks/node-start"
+	"github.com/initializ-buildpacks/node-start/fakes"
 	"github.com/paketo-buildpacks/packit/v2"
 	"github.com/paketo-buildpacks/packit/v2/scribe"
 	"github.com/sclevine/spec"
